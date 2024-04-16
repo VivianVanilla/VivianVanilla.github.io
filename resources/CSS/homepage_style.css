@@ -55,10 +55,10 @@ h3 {
     width: 70vh;
     max-width: 450px;
     opacity: 85%;
-    border: 5px dotted white;
-    padding: 4px;
-    top: -10px;
-    left: 430px;
+    border: 4px dotted white;
+    padding: 5px;
+    top: -1%;
+    left: 34%;
     object-position: center top;
 }
 .spacing-img {
