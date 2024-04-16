@@ -1,0 +1,94 @@
+/* */
+/* Homeless Code */
+*  {
+    font-family: Andale Mono, monospace;
+    box-sizing: border-box;
+}
+body {
+    background: linear-gradient(rgba(197, 65, 87, 0.74), rgb(255, 255, 255));
+    margin: 0;
+    padding: 0;
+}
+[href] {
+    color:rgb(231, 131, 148);
+    display: inline-block;
+    font-weight: bold;
+}
+a:hover {
+    color: rgb(194, 31, 58)
+}
+.caption {
+    background-color: white;
+    opacity: 80% !important;
+ }
+p {
+    font-family: Andale Mono, monospace;
+}
+h1 {
+    text-align: center !important; 
+    color: rgb(180, 129, 129);
+    opacity: 100% !important;
+    font-size: 65px;
+}
+h3 {
+    color: rgb(194, 31, 58);
+}
+.center {
+    text-align: center;
+    padding-bottom: 20px;
+}
+.sectiontitle {
+    text-align: center;
+    color: rgba(197, 65, 87, 0.74);
+    border: solid 2px white;
+    background-color: white;
+    border-radius: 6px;
+    padding: 13px;
+    margin-inline: 500px;
+    font-size: 35px;
+    font-weight: bolder;
+}
+/* Image Code */
+#nobaradrink {
+    position: relative;
+    height: 72vh;
+    width: 55%;
+    max-width: 450px;
+    opacity: 85%;
+    border: 5px dotted white;
+    padding: 4px;
+    top: -10px;
+    left: 430px;
+    object-position: center top;
+}
+.spacing-img {
+    margin: 20px 200px;
+}
+.link-img {
+    position: static;
+    height: 250px;
+    width: 250px; 
+}
+/* Links Code*/
+.bubbles .link-img {
+    border: solid 2px rgb(231, 131, 148); 
+    border-radius: 6px;
+    padding: 14px;
+    margin: 7px;
+ }
+ .bubbles .link-img:hover {
+    border: solid 2px rgb(194, 31, 58);
+    border-radius: 6px;
+    padding: 14px;
+ }
+.bubbles .socials {
+    border: solid 2px rgb(231, 131, 148); 
+    border-radius: 6px;
+    padding: 14px;
+    margin: 7px;
+ }
+ .bubbles .socials:hover {
+    border: solid 2px rgb(194, 31, 58);
+    border-radius: 6px;
+    padding: 14px;
+ }
