@@ -51,8 +51,8 @@ h3 {
 /* Image Code */
 #nobaradrink {
     position: relative;
-    height: 72vh;
-    width: 70vh;
+    height: 440px;
+    width: 450px;
     max-width: 450px;
     opacity: 85%;
     border: 4px dotted white;
