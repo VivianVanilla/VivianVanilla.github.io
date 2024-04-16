@@ -44,7 +44,7 @@ h3 {
     background-color: white;
     border-radius: 6px;
     padding: 13px;
-    margin-inline: 500px;
+    margin-inline: 400px;
     font-size: 35px;
     font-weight: bolder;
 }
@@ -58,8 +58,15 @@ h3 {
     border: 4px dotted white;
     padding: 5px;
     top: -1%;
-    left: 34%;
+    left: 33%;
     object-position: center top;
+
+}
+@media screen and (max-width: 768px) {
+    /* Styles specific to smaller screens (e.g., tablets and mobile phones) */
+    #nobaradrink {
+    left:25%    /* Your mobile-specific styles here */
+    }
 }
 .spacing-img {
     margin: 20px 200px;
