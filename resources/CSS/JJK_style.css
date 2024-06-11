@@ -1,0 +1,32 @@
+/* */
+/* Homeless Code */
+*  {
+    font-family: Andale Mono, monospace;
+}
+.searchbar {
+    padding-right: 20rem;
+    padding-left: 1rem;
+    border-radius: .4rem;
+    border: solid .15rem rgb(231, 131, 148); 
+}
+.character-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: .25rem;
+    margin-top: 1rem;
+}
+.card {
+  border: 2px solid rgb(231, 131, 148);
+  background-color: white;
+  padding: .5rem;
+}
+.card > .header {
+  margin-bottom: .25rem;
+}
+.card > .body {
+  font-size: .8rem;
+  color: #777;
+}
+.hide {
+  display: none;
+}
