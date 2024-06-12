@@ -14,7 +14,7 @@ searchInput.addEventListener("input", (e) => {
     })
 })
 
-fetch("")
+fetch("https://github.com/VivianVanilla/VivianVanilla.github.io/blob/main/pages/Scripts/meow.json")
 .then(res => res.json())
 .then(data => {
     character = data.map(character => {
