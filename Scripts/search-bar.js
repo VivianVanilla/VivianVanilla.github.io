@@ -14,13 +14,22 @@ searchInput.addEventListener("input", (e) => {
     });
 });
 
-fetch("https://api.jsonbin.io/v3/b/6669340cacd3cb34a856568a")
+fetch("https://character-storage-b28aa-default-rtdb.firebaseio.com/characters.json", {
+    headers: {
+        "key": "Access-Control-Allow-Origin"
+    }
+})
 .then(res => res.json())
 .then(data => {
-   characters = data.record.map(character => {
+   characters = data.map(character => {
     const card = characterTemplate.content.cloneNode(true).children[0];
     const header = card.querySelector("[data-header]");
     const body = card.querySelector("[data-body]");
+    card.addEventListener("click", () => {
+        window.location.href = `character-detail.html?name=${encodeURIComponent(character.name)}
+        &race=${encodeURIComponent(character.race)}
+        &charisma=${encodeURIComponent(character.charisma)}`;
+    });
     header.textContent = character.name;
     body.textContent = character.race;
     characterCardContainer.append(card);
