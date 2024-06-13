@@ -2,33 +2,57 @@ document.addEventListener("DOMContentLoaded", () => {
     const characterNameElement = document.getElementById("character-name");
     const characterRaceElement = document.getElementById("character-race");
     const characterCharismaElement = document.getElementById("character-charisma");
+    const characterWisdomElement = document.getElementById("character-wisdom");
+    const characterDexterityElement = document.getElementById("character-dexterity");
     const saveButton = document.getElementById("save-button");
     
 
     const urlParams = new URLSearchParams(window.location.search);
+    //debuggin area
+
+    console.log("Full Query String:", window.location.search);
+
+    console.log("URL Parameters:", window.location.search);
+
     const characterId = urlParams.get('id');
     const characterName = urlParams.get('name');
     const characterRace = urlParams.get('race');
     const characterCharisma = urlParams.get('charisma');
+    const characterWisdom = urlParams.get('wisdom');
+    const characterDexterity = urlParams.get('dexterity');
 
-    if (characterName && characterRace && characterCharisma) {
+    //Debugging Area
+    console.log("Character Charisma:", characterCharisma);
+    console.log("Character Wisdom:", characterWisdom);
+
+    if (characterName && characterRace && characterCharisma && characterWisdom && characterDexterity) {
         characterNameElement.textContent = characterName;
         characterRaceElement.textContent = characterRace;
         characterCharismaElement.value = characterCharisma;
+        characterWisdomElement.value = characterWisdom;
+        characterDexterityElement.value = characterWisdom;
+        
+        
     } else {
         characterNameElement.textContent = "Character not found";
         characterRaceElement.textContent = "";
         characterCharismaElement.value = "";
+        characterWisdomElement.value = "";
     }
 
     saveButton.addEventListener("click", () => {
 
-        const updatedCharisma = characterCharismaElement.value;  
+        const updatedCharisma = characterCharismaElement.value;
+        const updatedWisdom = characterWisdomElement.value;
+        const updatedDexterity = characterDexterityElement.value;
+        
         const updateData = {
-            charisma: updatedCharisma
+            charisma: updatedCharisma,
+            wisdom: updatedWisdom,
+            dexterity: updatedDexterity
         };
-
-
+        
+        console.log("Character ID:", characterId);
         
         fetch(`https://character-storage-b28aa-default-rtdb.firebaseio.com/characters/${characterId}.json`, {
             method: "PATCH",

@@ -26,9 +26,12 @@ fetch("https://character-storage-b28aa-default-rtdb.firebaseio.com/characters.js
     const header = card.querySelector("[data-header]");
     const body = card.querySelector("[data-body]");
     card.addEventListener("click", () => {
-        window.location.href = `character-detail.html?name=${encodeURIComponent(character.name)}
+        window.location.href = `character-detail.html?id=${encodeURIComponent(character.id)}
+        &name=${encodeURIComponent(character.name)}
         &race=${encodeURIComponent(character.race)}
-        &charisma=${encodeURIComponent(character.charisma)}`;
+        &charisma=${encodeURIComponent(character.charisma)}
+        &wisdom=${encodeURIComponent(character.wisdom)}
+        &dexterity=${encodeURIComponent(character.dexterity)}`;
     });
     header.textContent = character.name;
     body.textContent = character.race;
