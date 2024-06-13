@@ -12,6 +12,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     console.log("Full Query String:", window.location.search);
 
+    
+    //debuggin area
+
     console.log("URL Parameters:", window.location.search);
 
     const characterId = urlParams.get('id');
