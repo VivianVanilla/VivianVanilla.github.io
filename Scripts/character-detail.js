@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
         characterRaceElement.textContent = characterRace;
         characterCharismaElement.value = characterCharisma.trim();
         characterWisdomElement.value = characterWisdom.trim();
-        characterDexterityElement.value = characterWisdom.trim();
+        characterDexterityElement.value = characterDexterity.trim();
         
         
     } else {
