@@ -31,7 +31,21 @@ fetch("https://character-storage-b28aa-default-rtdb.firebaseio.com/characters.js
         &race=${encodeURIComponent(character.race)}
         &charisma=${encodeURIComponent(character.charisma)}
         &wisdom=${encodeURIComponent(character.wisdom)}
-        &dexterity=${encodeURIComponent(character.dexterity)}`;
+        &dexterity=${encodeURIComponent(character.dexterity)}
+        &strength=${encodeURIComponent(character.strength)}
+        &constitution=${encodeURIComponent(character.constitution)}
+        &intelligence=${encodeURIComponent(character.intelligence)}
+        &walking=${encodeURIComponent(character.walking)}
+        &flight=${encodeURIComponent(character.flight)}
+        &fly=${encodeURIComponent(character.fly)}
+        &health=${encodeURIComponent(character.health)}
+        &maxhealth=${encodeURIComponent(character.maxhealth)}
+        &cursedenergy=${encodeURIComponent(character.cursedenergy)}
+        &maxcursedenergy=${encodeURIComponent(character.maxcursedenergy)}
+        &rct=${encodeURIComponent(character.rct)}
+        &blackflash=${encodeURIComponent(character.blackflash)}
+        &armor=${encodeURIComponent(character.armor)}
+        &extrainfo=${encodeURIComponent(character.extrainfo)}`;
     });
     header.textContent = character.name;
     body.textContent = character.race;

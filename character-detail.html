@@ -15,11 +15,58 @@
             <div class="stats">
                 <label for="Charisma"> Charisma </label>
                 <input id="character-charisma" name="Charisma" type="number" minlength="1" maxlength="20">
+
                 <label for="Wisdom"> Wisdom </label>
-                <input id="character-wisdom" name="Wisdom" type="number" minlength="1" maxlength="20">
+                <input id="character-wisdom" name="Wisdom" type="number" min="1" max="20">
+
                 <label for="Dexterity"> Dexterity </label>
-                <input id="character-dexterity" name="Dexterity" type="number" minlength="1" maxlength="20">
+                <input id="character-dexterity" name="Dexterity" type="number" min="1" max="20">
+
+                <label for="Strength"> Strength </label>
+                <input id="character-strength" name="Strength" type="number" min="1" max="20">
+                
+                <label for="Constitution"> Constitution </label>
+                <input id="character-constitution" name="Constitution" type="number" min="1" max="20">
+
+                <label for="Intelligence"> Intelligence </label>
+                <input id="character-intelligence" name="Intelligence" type="number" min="1" max="20">
+
                 </div>
+                <label for="Walking"> Walking Speed </label>
+                <input id="character-walking" name="Walking" type="number" min="1" >ft</input>
+                <div class="movement-stats">
+                    <label for="flight"> Flight </label>
+
+                <input id="character-flight" name="flight" type="number" min="1" >ft</input>
+                <input id="character-fly" type="checkbox">
+                </div>
+
+
+                <div class="health-stats">
+                    <label for="Health"> Current HP </label>
+                    <input id="character-health" name="Health" type="number" min="1" ></input>
+
+                    <label for="MaxHealth"> Max HP </label>
+                    <input id="character-maxhealth" name="MaxHealth" type="number" min="1" ></input>
+                    </div>
+                    <label for="Armor"> AC </label>
+                    <input id="character-armor" name="Armor" type="number" min="1" ></input>
+                <div class="cursed-energy">
+                    <label for="cursedenergy"> Current CE </label>
+                    <input id="character-cursedenergy" name="cursedenergy" type="number" min="1" ></input>
+
+                    <label for="maxcursedenergy"> Max CE </label>
+                    <input id="character-maxcursedenergy" name="maxcursedenergy" type="number" min="1" ></input>
+                </div>
+                <div class="extra-stats"> 
+                    <label for="rct"> Reverse Cursed Technique </label>
+                    <input id="character-rct" name="rct" type="checkbox">
+                    <label for="blackflash"> Black Flash </label>
+                    <input id="character-blackflash" type="checkbox">
+
+                </div>
+                <label for="extra"> Extra Info </label>
+                <textarea id="character-extrainfo" name="extra" size="50"></textarea>
                 <button type="button" id="save-button">Save Changes</button>
                 </form>
                 
