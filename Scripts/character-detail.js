@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
         
         console.log("Character ID:", characterId);
         
-        fetch(`https://character-storage-b28aa-default-rtdb.firebaseio.com/characters/${characterId}.json`, {
+        fetch(`https://character-storage-b28aa-default-rtdb.firebaseio.com/characters/${characterId.trim()}.json`, {
             method: "PATCH",
             headers: {
                 "Content-Type": "application/json"
