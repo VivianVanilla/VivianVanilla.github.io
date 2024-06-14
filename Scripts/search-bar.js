@@ -2,7 +2,10 @@ const characterTemplate = document.querySelector("[data-character-template]")
 const characterCardContainer = document.querySelector("[data-character-cards-container]");
 const searchInput = document.querySelector("[data-search]");
 
+
 let characters = [];
+
+
 
 searchInput.addEventListener("input", (e) => {
     const value =e.target.value.toLowerCase();

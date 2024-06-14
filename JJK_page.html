@@ -6,11 +6,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>JJK DND</title>
         <link rel="stylesheet" href="resources/CSS/JJK_style.css">
+        <link href="new-character.html">
         <script src="Scripts/search-bar.js" defer></script>
       </head>
       <body>
         <div class="search-wrapper"> 
-            <input type="text" placeholder="search ^.^" class="searchbar" data-search>
+            <input type="text" placeholder="search ^.^" class="searchbar" data-search> 
+            <a href="new-character.html">
+              <button type="button" id="new-character-button" > Add New Character </button> 
+              </a>
         </div>
         <div class="character-cards" data-character-cards-container></div>
         <template data-character-template>
