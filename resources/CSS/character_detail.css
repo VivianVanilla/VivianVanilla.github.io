@@ -43,6 +43,6 @@ input {
     width: 8rem;
     border-radius: .5rem;
 }
-.extra  {
-    color:firebrick
+#character-extrainfo {
+    color:firebrick;
 }
