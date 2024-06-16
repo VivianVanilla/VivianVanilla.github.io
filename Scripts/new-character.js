@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
             return;
         }
         const characterData = {
-            idNum: idNum,
+            id: idNum,
             name: name,
             race: race 
         };

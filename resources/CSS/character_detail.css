@@ -1,0 +1,45 @@
+*  {
+    font-family: Andale Mono, monospace;
+    box-sizing: border-box; 
+    color:azure;
+}
+    
+    body {
+        background: rgba(197, 65, 87, 0.74);
+        margin: 0;
+        padding: 0;
+        margin: .5rem;
+    }
+
+.stats {
+    font-size: .9rem;
+}
+
+input {
+    color: rgba(197, 65, 87, 0.74);
+    padding: .5rem;
+    border-radius: .6rem;
+    border-color: rgba(197, 65, 87, 0.74);;
+    text-align: center;
+    width: 5rem;
+}
+
+.stats input {
+    padding-left: .1rem;
+    border-radius: 6rem;
+    width: 5rem;
+    
+    
+
+}
+
+.health-stats input {
+    color: rgb(194, 0, 32);
+    width: 8rem;
+    
+}
+.cursed-energy input {
+    color: black;
+    width: 8rem;
+    border-radius: .5rem;
+}
