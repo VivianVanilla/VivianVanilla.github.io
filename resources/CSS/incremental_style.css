@@ -1,0 +1,50 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+    color: azure;
+}
+body {
+    background: #58427c;
+    height: 100vh;
+}
+input {
+   position: relative;
+   display: block;
+   margin: auto;
+}
+input#sifters:active {
+    width: 12rem;
+    height: 6.2rem;
+}
+input#stardust:active {
+width: 12rem;
+height: 12rem;
+
+}
+#middle-area {
+position: fixed;
+top: 1rem;
+left: 18.75rem;
+right: 18.75rem;
+}
+#left-area {
+position: fixed;
+top: 1rem;
+left: 0;
+right: 60rem;  
+}
+#right-area {
+    position: fixed;
+    top: 1rem;
+    left: 60rem;
+    right: 0rem;  
+    }
+.center {
+    position: relative;
+    margin: auto;
+    width: 50%;
+    text-align: center;
+  }
+.box {
+border: solid .15rem;
+border-color: azure;
+}
