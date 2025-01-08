@@ -9,29 +9,33 @@
         <title> Star Seeker </title>
         </head>
 <body>
-<div id="left-area">
-    <h4 class="center"> stardust Sifting Power </h4>
-    <h3 class="center" id="stardustclickpower"> </h3>
-</div>
+    <div class="bigarea"> 
+        <div class="left">
+             <h4 class="center"> stardust Sifting Power </h4>
+             <h3 class="center" id="stardustclickpower"> </h3>
+        </div>
 
 
- <div id="middle-area" >
-    <div class="box"> 
-<h2 class="center"> Stardust </h2>
-<h2  class="center" id="stardustcounter"> </h2>
-</div>
-<div id="right-area">
+    <div class="middle" >
+        <div class="box"> 
+         <h2 class="center"> Stardust </h2>
+            <h2  class="center" id="stardustcounter"> </h2>
+        </div>
+        <h2 class="center"> Sift for Stardust </h2>
+        <input type="image" src="resources/images/weak_star.png" id="stardust" onclick="stardustClick(0.1)">
+    </div>
+<div class="right">
     <h3 class="center">Sifters Goblins</h3>
     <input type="image" src="resources/images/sifter.png" id="sifters" onclick="buySifter(1)">
     <h3 class="center">You have: <span id="totalSifters"></span> <br>
     Cost: <span id="siftersCost"></span>
     </h3>
+    
 </div>
+</div>
+   
 
 
-    <h2 class="center"> Sift for Stardust </h2>
-    <input type="image" src="resources/images/weak_star.png" id="stardust" onclick="stardustClick(0.1)">
-</div>   
 
 
 </body>

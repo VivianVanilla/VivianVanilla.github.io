@@ -1,50 +1,50 @@
 * {
     font-family: 'Courier New', Courier, monospace;
     color: azure;
+    border: 1px solid black;
 }
 body {
     background: #58427c;
     height: 100vh;
 }
-input {
+ /* input {
    position: relative;
    display: block;
    margin: auto;
-}
+} */
 input#sifters:active {
     width: 12rem;
     height: 6.2rem;
 }
 input#stardust:active {
 width: 12rem;
-height: 12rem;
-
-}
-#middle-area {
-position: fixed;
-top: 1rem;
-left: 18.75rem;
-right: 18.75rem;
-}
-#left-area {
-position: fixed;
-top: 1rem;
-left: 0;
-right: 60rem;  
-}
-#right-area {
-    position: fixed;
-    top: 1rem;
-    left: 60rem;
-    right: 0rem;  
-    }
-.center {
-    position: relative;
-    margin: auto;
+height: 12rem; }
+  .center {
+    position: relative; 
+    margin: auto; 
     width: 50%;
     text-align: center;
-  }
+  } 
+.left {
+    grid-column: 1 / 2;
+}
+.middle {
+    grid-column: 2 / 4;
+}
+.middle-1 {
+    grid-column: 2 / 4;
+    
+}
+.right { 
+    grid-column: 4 / 5;
+}
 .box {
-border: solid .15rem;
-border-color: azure;
+border: 2px solid azure;
+width: 100%;
+}
+.bigarea {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 }
