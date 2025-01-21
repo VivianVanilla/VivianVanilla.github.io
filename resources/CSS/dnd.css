@@ -1,0 +1,41 @@
+body {
+    background-image: url('../images/marine-landscape-cartoon-style.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.box {
+    justify-content: space-around;
+    display: flex;
+
+}
+a {
+    color: black;
+}
+a:hover {
+    color: rgb(42, 255, 244);
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  li { 
+    float: right;
+    margin-right: 3rem;
+    font-size: 200%;
+    border-radius: 2rem;
+    background-color: lightblue;
+    padding: 3rem;
+  }
+  @media only screen and (max-width: 1000px) {
+   li {
+    margin-right: 0;
+    margin-top: 3rem;
+    float:none;
+    font-size: 400%;
+   }
+}
