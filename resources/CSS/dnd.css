@@ -2,14 +2,14 @@ body {
     background-image: url('../images/marine-landscape-cartoon-style.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+}
+.bigbox {
+   
+}
+.box {
     justify-content: center;
     align-items: center;
     display: flex;
-}
-.box {
-    justify-content: space-around;
-    display: flex;
-
 }
 a {
     color: black;
@@ -22,9 +22,11 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    display: flex;
   }
   li { 
-    float: right;
     margin-right: 3rem;
     font-size: 200%;
     border-radius: 2rem;
