@@ -1,18 +1,15 @@
-const characterTemplate = document.querySelector("[data-character-template]")
-const characterCardContainer = document.querySelector("[data-character-cards-container]");
 const searchInput = document.querySelector("[data-search]");
 
 
-let characters = [];
+let cell = [];
 
 
 
 searchInput.addEventListener("input", (e) => {
     const value =e.target.value.toLowerCase();
-    characters.forEach(character => {
+    cell.forEach(cell => {
         const isVisible = 
-        character.name.toLowerCase().includes(value) || 
-        character.race.toLowerCase().includes(value);
+        cell.name.toLowerCase().includes(value) || 
         character.element.classList.toggle("hide", !isVisible );
     });
 });

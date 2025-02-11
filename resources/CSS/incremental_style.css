@@ -1,24 +1,40 @@
 * {
     font-family: 'Courier New', Courier, monospace;
     color: azure;
-    border: 1px solid black;
+    
 }
 body {
     background: #58427c;
     height: 100vh;
 }
- /* input {
+  input {
    position: relative;
    display: block;
    margin: auto;
-} */
-input#sifters:active {
-    width: 12rem;
-    height: 6.2rem;
+   transition: 400ms linear;
+} 
+button {
+    background-color: black;
+    position: relative;
+   display: block;
+   margin: auto;
+   transition: 400ms linear;
 }
-input#stardust:active {
-width: 12rem;
-height: 12rem; }
+#sifters:active {
+   filter:saturate(250%);
+   height: 7.5em;
+   width: 14.5em;
+}
+#sifters:active {
+    filter:saturate(250%);
+    height: 7.5em;
+    width: 14.5em;
+ }
+ #stardust:active {
+    filter:saturate(250%);
+    height: 15em;
+    width: 15.5em;
+ }
   .center {
     position: relative; 
     margin: auto; 
